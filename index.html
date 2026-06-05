@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meeting Briefing – Point Source Marketing | June 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--navy:#1a2340;--gold:#c9a84c;--blue:#4d7186;--sage:#afddb3;--red:#c0392b;--off:#f0f2f5;--white:#fff;--gray:#6b7280;--border:#e2e5ea;--text:#1a2535}
+body{font-family:'Barlow',sans-serif;background:var(--off);color:var(--text);min-height:100vh}
+.hdr{background:var(--navy);height:68px;padding:0 48px;display:flex;align-items:center;justify-content:space-between;border-bottom:3px solid var(--gold)}
+.hdr-logo{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:22px;color:#fff;letter-spacing:2px;text-transform:uppercase}
+.hdr-logo span{color:var(--gold)}
+.hdr-right{text-align:right}
+.hdr-right .lbl{font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:3px;color:var(--gold);text-transform:uppercase}
+.hdr-right .mo{font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;color:#fff;letter-spacing:1px}
+.main{max-width:900px;margin:0 auto;padding:32px 32px 50px}
+.doc-title{font-family:'Barlow Condensed',sans-serif;font-size:38px;font-weight:900;color:var(--navy);line-height:1.1;margin-bottom:20px}
+.meta-bar{display:flex;gap:36px;margin-bottom:28px;padding:14px 18px;background:var(--white);border-radius:8px;border:1px solid var(--border)}
+.meta-item{display:flex;flex-direction:column;gap:2px}
+.meta-label{font-size:10px;font-weight:700;letter-spacing:2px;color:var(--gray);text-transform:uppercase}
+.meta-value{font-size:13px;font-weight:600;color:var(--navy)}
+.topic-header{font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:800;color:var(--navy);padding:10px 0 4px;margin-top:28px;margin-bottom:14px;border-bottom:2px solid var(--gold);text-transform:uppercase;letter-spacing:1px}
+.topic-header-red{font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:800;color:var(--red);padding:10px 0 4px;margin-top:28px;margin-bottom:14px;border-bottom:2px solid var(--red);text-transform:uppercase;letter-spacing:1px}
+.section{margin-bottom:16px}
+.section-num{font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:700;letter-spacing:3px;color:var(--gold);text-transform:uppercase;margin-bottom:4px}
+.section-title{font-family:'Barlow Condensed',sans-serif;font-size:20px;font-weight:800;color:var(--navy);margin-bottom:10px}
+.card{background:var(--white);border-radius:8px;padding:18px 20px;border:1px solid var(--border);margin-bottom:10px}
+.card-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.card-title{font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:700;color:var(--navy);letter-spacing:1px;text-transform:uppercase}
+.card-status{font-size:10px;font-weight:700;letter-spacing:1px;padding:3px 8px;border-radius:3px;text-transform:uppercase}
+.status-red{background:#fde8e8;color:var(--red)}
+.status-yellow{background:#fef3cd;color:#856404}
+.card-body{font-size:13px;line-height:1.65;color:#374151}
+.card-body strong{color:var(--navy)}
+.raised-box{background:#fdf6e3;border-left:4px solid var(--gold);padding:12px 16px;border-radius:0 6px 6px 0;margin-top:8px;font-size:12.5px;line-height:1.6;color:#5a4e2f}
+.raised-box strong{color:var(--navy)}
+.alert-box{background:#fde8e8;border-left:4px solid var(--red);padding:12px 16px;border-radius:0 6px 6px 0;margin-top:8px;font-size:12.5px;line-height:1.6;color:#6b2020}
+.alert-box strong{color:var(--red)}
+.action-box{background:#e8f5e9;border-left:4px solid var(--sage);padding:12px 16px;border-radius:0 6px 6px 0;margin-top:8px;font-size:12.5px;line-height:1.6;color:#1b5e20}
+.action-box strong{color:#1b5e20}
+.highlight-card{background:var(--navy);border-radius:8px;padding:20px 22px;margin-bottom:10px;color:#fff}
+.highlight-card .card-title{color:var(--gold)}
+.highlight-card .card-body{color:#d1d9e6;font-size:13px}
+.highlight-card .card-body strong{color:#fff}
+.critical-card{background:#6b2020;border-radius:8px;padding:20px 22px;margin-bottom:10px;color:#fff}
+.critical-card .card-title{color:#fca5a5}
+.critical-card .card-body{color:#fde8e8;font-size:13px;line-height:1.65}
+.critical-card .card-body strong{color:#fff}
+.divider{height:1px;background:var(--border);margin:20px 0}
+.footer-note{font-size:11px;color:var(--gray);text-align:center;margin-top:32px;line-height:1.6}
+@media(max-width:700px){.hdr{padding:0 16px}.main{padding:20px 14px}.meta-bar{flex-direction:column;gap:10px}.doc-title{font-size:28px}}
+</style>
+</head>
+<body>
+
+<header class="hdr">
+  <div class="hdr-logo">WAFS <span>/</span> BTE</div>
+  <div class="hdr-right">
+    <div class="lbl">Meeting Briefing</div>
+    <div class="mo">Point Source Marketing</div>
+  </div>
+</header>
+
+<main class="main">
+
+  <div class="doc-title">PSM Meeting Briefing &middot; Google Ads &amp; Website Review</div>
+
+  <div class="meta-bar">
+    <div class="meta-item">
+      <span class="meta-label">Meeting</span>
+      <span class="meta-value">Tuesday, June 10, 2026</span>
+    </div>
+    <div class="meta-item">
+      <span class="meta-label">With</span>
+      <span class="meta-value">Austin &amp; Riley</span>
+    </div>
+    <div class="meta-item">
+      <span class="meta-label">Campaign</span>
+      <span class="meta-value">PSM - Year-Round Tax Strategy</span>
+    </div>
+    <div class="meta-item">
+      <span class="meta-label">Status</span>
+      <span class="meta-value" style="color:var(--red)">Paused since May 20</span>
+    </div>
+  </div>
+
+  <!-- ==================== TOPIC 1: GOOGLE ADS ==================== -->
+  <div class="topic-header">Google Ads Campaign Review</div>
+
+  <!-- IMAGES -->
+  <div class="section">
+    <div class="section-num">Issue 01 &middot; Critical</div>
+    <div class="section-title">Image Assets: Generic Stock Photos</div>
+    <div class="card">
+      <div class="card-header">
+        <span class="card-title">What We Found</span>
+        <span class="card-status status-red">Not Resolved</span>
+      </div>
+      <div class="card-body">
+        All image assets in the campaign are generic stock photos from Google's free image library. Every file is named <strong>"Free stock image."</strong> There is no BTE logo, no custom visuals, and no brand identity present. The ad is rated <strong>"Poor" in ad strength</strong> largely because of this.
+      </div>
+      <div class="alert-box">
+        <strong>Previously detected and raised.</strong> This issue was flagged before but has not been resolved. As of today, the same stock images remain in the campaign.
+      </div>
+    </div>
+    <div class="highlight-card">
+      <div class="card-title">Action: Dedicated Creative Folder</div>
+      <div class="card-body">
+        <strong>Our internal team is building a dedicated folder with branded images and creative assets built specifically for SEO and paid campaigns.</strong> This folder will include custom visuals with the BTE logo, avatar, brand colors, and visual identity. It will be shared via Zoho WorkDrive as soon as it is organized. <strong>Once delivered, the team needs to replace all current stock images with these branded assets.</strong>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- LOCATION -->
+  <div class="section">
+    <div class="section-num">Issue 02 &middot; High</div>
+    <div class="section-title">Geographic Targeting</div>
+    <div class="card">
+      <div class="card-header">
+        <span class="card-title">What We Found</span>
+        <span class="card-status status-red">Not Resolved</span>
+      </div>
+      <div class="card-body">
+        Location targeting is set to <strong>"United States (country)"</strong> with no further segmentation. For the two brands, targeting should reflect how each one operates:
+        <br><br>
+        <strong>WAFS</strong> is a local firm serving Mid-Missouri. Targeting should focus on the Columbia/Mid-Missouri area, ideally with a radius or at minimum state-level targeting. Running nationally wastes budget on areas with no conversion potential.
+        <br><br>
+        <strong>BTE</strong> serves clients across multiple industries nationally, so broader targeting may be appropriate. However, even for BTE, starting with high-conversion states or regions and expanding from there would be a more strategic use of the budget.
+      </div>
+      <div class="alert-box">
+        <strong>Previously detected and raised.</strong> This was flagged before. No changes have been made.
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- CONVERSION GOALS -->
+  <div class="section">
+    <div class="section-num">Issue 03 &middot; High</div>
+    <div class="section-title">Conversion Goals: Account-Default</div>
+    <div class="card">
+      <div class="card-header">
+        <span class="card-title">What We Found</span>
+        <span class="card-status status-yellow">Needs Definition</span>
+      </div>
+      <div class="card-body">
+        Conversion goals are set to <strong>"Account-default,"</strong> meaning no specific conversion actions have been defined. Google does not know whether to optimize for a phone call, a form submission, or a booking. Defining clear goals would significantly improve how the algorithm allocates budget.
+      </div>
+      <div class="raised-box">
+        <strong>Previously discussed.</strong> The plan was to use phone calls and lead generation as goals, but this has not been configured yet.
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- BUDGET -->
+  <div class="section">
+    <div class="section-num">Issue 04 &middot; Medium</div>
+    <div class="section-title">Daily Budget: $7.00/day</div>
+    <div class="card">
+      <div class="card-body">
+        The budget is set at <strong>$7.00/day (~$210/month)</strong>. For a Performance Max campaign distributing across Search, Display, YouTube, Gmail, and Discover, this is below the recommended minimum of $15-20/day. At this level the algorithm does not collect enough data to learn and optimize.
+        <br><br>
+        The plan was to start at $250/month and scale to $500 after reviewing early performance. Since the campaign has been paused with zero data, no evaluation has been possible.
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- SITELINKS -->
+  <div class="section">
+    <div class="section-num">Issue 05 &middot; Medium</div>
+    <div class="section-title">Sitelinks: Not Configured</div>
+    <div class="card">
+      <div class="card-body">
+        No sitelinks have been added. Sitelinks are additional links below the main ad (e.g., "Our Services," "Book a Consultation") that improve ad strength and click-through rate. Google recommends a minimum of 4 for Performance Max.
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- VIDEO -->
+  <div class="section">
+    <div class="section-num">Issue 06 &middot; Pending on Our Side</div>
+    <div class="section-title">Video Assets: None</div>
+    <div class="card">
+      <div class="card-body">
+        The video asset section is empty. Performance Max distributes across YouTube and video placements, so video assets are important for full campaign coverage. <strong>This is pending on our end.</strong> We are finalizing video content and will deliver it to the shared folder for the team to add to the campaign.
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== TOPIC 2: WEBSITE / BLOG ==================== -->
+  <div class="topic-header-red">Website: Blog Page Issue</div>
+
+  <div class="critical-card">
+    <div class="card-title">Critical: Blog Page Displaying Generic Agency Template</div>
+    <div class="card-body">
+      The blog page at <strong>woodsonaccounting.com/blog/</strong> is still displaying the default marketing agency template instead of actual Woodson Accounting content. The page includes:
+      <br><br>
+      &bull; Placeholder text in Latin (lorem ipsum) throughout the page<br>
+      &bull; Generic services listed: "Develop Website," "Graphic Designing," "Content Writing," "Market Strategy"<br>
+      &bull; Fake statistics: "360+ Happy Client," "650 Ongoing Project," "15+ Award Achieved"<br>
+      &bull; Fabricated testimonials from fictional people ("Nat Reynoldes," "Adam Henry")<br>
+      &bull; A misspelling: "SATICFACTION RATE"<br>
+      &bull; The heading "Our Digital Agency Sector" with "25 Years Of Experience"<br>
+      &bull; All images are default theme assets from BlocksKit Agency
+      <br><br>
+      The actual blog posts (3 articles) only appear at the very bottom of the page, buried under all the template content. <strong>Any lead or prospect visiting the site and clicking Blog sees a page that has nothing to do with Woodson Accounting.</strong>
+    </div>
+    <div class="alert-box">
+      <strong>This was raised in a previous meeting.</strong> The team committed to fixing it, but as of today the page remains unchanged. This needs to be resolved immediately as it directly impacts credibility and SEO.
+    </div>
+  </div>
+
+  <!-- ==================== TOPIC 3: QBO CAMPAIGN ==================== -->
+  <div class="topic-header">Upcoming: QBO Campaign for June</div>
+
+  <div class="card">
+    <div class="card-body" style="font-size:13.5px;line-height:1.7">
+      We are planning to launch a <strong>QBO (QuickBooks Online) campaign in June</strong>. This will be our primary push to generate new leads and is where we plan to concentrate our efforts this month.
+      <br><br>
+      This campaign will be the bridge to actively drive new client acquisition. If the PSM team can be aligned on this initiative, whether through ad support, landing page coordination, or keyword strategy, it would help ensure a stronger launch.
+      <br><br>
+      <strong>We would like to discuss scope, timeline, and how PSM can support this effort during the meeting.</strong>
+    </div>
+  </div>
+
+  <!-- ==================== KEY QUESTIONS ==================== -->
+  <div class="topic-header">Key Questions for the Meeting</div>
+
+  <div class="card">
+    <div class="card-body" style="font-size:13.5px;line-height:1.85">
+      <strong>1.</strong> When will the blog page at woodsonaccounting.com/blog/ be fixed? It is still showing the generic agency template.
+      <br><br>
+      <strong>2.</strong> When will the stock images be replaced with branded assets? We will be providing a dedicated creative folder.
+      <br><br>
+      <strong>3.</strong> Why has geographic targeting not been updated since our last conversation?
+      <br><br>
+      <strong>4.</strong> When will specific conversion goals be configured?
+      <br><br>
+      <strong>5.</strong> What is the timeline for unpausing the campaign once changes are in place?
+      <br><br>
+      <strong>6.</strong> What early performance benchmarks should we expect in the first 2-4 weeks?
+      <br><br>
+      <strong>7.</strong> Can sitelinks be added before launch?
+      <br><br>
+      <strong>8.</strong> How can PSM support the QBO campaign we are planning for June?
+    </div>
+  </div>
+
+  <div class="footer-note">
+    Prepared by our internal team &middot; WAFS &amp; BTE Operations<br>
+    June 2026 &middot; Confidential
+  </div>
+
+</main>
+</body>
+</html>
